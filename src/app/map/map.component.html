@@ -1,5 +1,86 @@
-<div class="map-container">
-    <object id="worldMap" type="image/svg+xml" data="assets/world.svg"></object>
+<div class="map-data-container">
+    <div class="map-wrapper">
+        <object id="worldMap" type="image/svg+xml" data="assets/world.svg"></object>
+    </div>
+    <div class="data-wrapper">
+        <h2>Country Data</h2>
+        
+        <div class="stat-row">
+            <div class="stat">
+                <div class="label">
+                    <p>Name</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.name || ' ' }}</h4>
+                </div>
+            </div>
+    
+            <div class="stat">
+                <div class="label">
+                    <p>Capital</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.capitalCity || ' ' }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="stat-row">
+            <div class="stat">
+                <div class="label">
+                    <p>Region</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.region?.value || ' ' }}</h4>
+                </div>
+            </div>
+    
+            <div class="stat">
+                <div class="label">
+                    <p>Income Level</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.incomeLevel?.value || ' ' }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="stat-row">
+            <div class="stat">
+                <div class="label">
+                    <p>Longitude</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.longitude || ' ' }}</h4>
+                </div>
+            </div>
+    
+            <div class="stat">
+                <div class="label">
+                    <p>Latitude</p>
+                </div>
+                <div class="value">
+                    <h4>{{ generalInfo?.latitude || ' ' }}</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-row">
+            <div class="stat">
+                <div class="label">
+                    <p>Population</p>
+                </div>
+                <div class="value">
+                    <h4>{{ populationInfo?.value || ' ' }}</h4>
+                </div>
+            </div>
+    
+            <div class="stat">
+                <div class="label">
+                    <p>Land Area (Sq Km)</p>
+                </div>
+                <div class="value">
+                    <h4>{{ landAreaInfo?.value || ' ' }}</h4>
+                </div>
+            </div>
+        </div>
+    
 </div>
-
-
